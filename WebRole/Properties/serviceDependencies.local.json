@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "secrets2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/WebRolevault",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri",
+      "secretStore": null
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/guestbookpg",
+      "type": "storage.azure",
+      "connectionId": "mystorageconnectionstring",
+      "secretStore": "AzureKeyVault"
+    }
+  }
+}
